@@ -1,0 +1,17 @@
+name: PolitElections
+version: 1.0.0
+main: ru.polittest.elections.PolitElections
+api-version: "1.21"
+depend: [Towny]
+description: Выборы председателя сервера и законы меты боёв
+commands:
+  election:
+    description: Выборы председателя
+    usage: /election <start|end|run|vote|status>
+  chairman:
+    description: Меню председателя
+    usage: /chairman
+permissions:
+  politelections.admin:
+    description: Запуск и завершение выборов
+    default: op
